@@ -3,33 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TeklifChat - Teklif Almanın En Kolay Yolu</title>
+    <title>TeklifChat | İhtiyacını Yaz, Teklifleri Karşılaştır</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 font-sans">
 
-    <nav class="flex justify-between items-center py-6 px-10">
-        <div class="text-2xl font-bold text-indigo-700">TeklifChat</div>
-        <div class="space-x-6">
-            <a href="#" class="text-gray-600">Nasıl Çalışır?</a>
-            <a href="#" class="text-gray-600">Kategoriler</a>
-            <button class="px-4 py-2 border rounded-lg">Giriş Yap</button>
-            <button class="px-4 py-2 bg-indigo-600 text-white rounded-lg">Firma Girişi</button>
+    <!-- Navbar -->
+    <nav class="bg-white border-b border-gray-100 px-6 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-indigo-600 tracking-tight">TeklifChat</h1>
+        <div class="flex items-center gap-4">
+            <a href="#" class="text-gray-600 hover:text-indigo-600 font-medium">Giriş Yap</a>
+            <a href="#" class="bg-indigo-600 text-white px-5 py-2 rounded-full font-bold hover:bg-indigo-700 transition">Firma Girişi</a>
         </div>
     </nav>
 
-    <header class="text-center py-16">
-        <h1 class="text-5xl font-extrabold text-gray-900 mb-4">İhtiyacını Yaz, Teklifleri Karşılaştır!</h1>
-        <p class="text-gray-600 mb-8">Binlerce firma arasından sana en uygun teklifi sunanları bul.</p>
-        
-        <div class="max-w-4xl mx-auto bg-white p-6 rounded-2xl shadow-lg flex gap-4">
-            <input type="text" placeholder="Örn: İstanbul'da ev boya badana hizmeti arıyorum." class="flex-grow p-3 border rounded-lg">
-            <select class="p-3 border rounded-lg">
-                <option>Kategori Seçin</option>
-            </select>
-            <button class="bg-indigo-600 text-white px-8 py-3 rounded-lg font-bold">Talep Oluştur</button>
+    <!-- Hero Section -->
+    <header class="py-16 px-6 text-center bg-white">
+        <div class="max-w-3xl mx-auto">
+            <span class="text-indigo-600 font-semibold bg-indigo-50 px-4 py-1 rounded-full text-sm">Teklif Almanın En Kolay Yolu</span>
+            <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 mt-6 mb-6">İhtiyacını Yaz, Teklifleri <span class="text-indigo-600">Karşılaştır!</span></h1>
+            <p class="text-gray-500 text-lg mb-10">Ev boyamadan nakliyeye, binlerce firma arasından en iyi teklifi seç, zamandan tasarruf et.</p>
+            
+            <!-- Arama Formu -->
+            <div class="bg-white shadow-2xl p-2 rounded-2xl border border-gray-100 flex flex-col md:flex-row gap-2">
+                <input type="text" placeholder="Ne hizmeti arıyorsunuz?" class="flex-grow p-4 outline-none text-lg">
+                <button class="bg-indigo-600 text-white px-8 py-4 rounded-xl font-bold hover:bg-indigo-700">Talep Oluştur</button>
+            </div>
         </div>
     </header>
+
+    <!-- Kategoriler -->
+    <section class="max-w-6xl mx-auto py-20 px-6">
+        <h2 class="text-3xl font-bold text-center mb-12">Popüler Kategoriler</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition text-center">
+                <div class="w-16 h-16 bg-indigo-50 rounded-full flex items-center justify-center mx-auto mb-4 text-indigo-600 text-2xl">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <h3 class="font-bold text-lg">Nakliyat</h3>
+            </div>
+            <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition text-center">
+                <div class="w-16 h-16 bg-indigo-50 rounded-full flex items-center justify-center mx-auto mb-4 text-indigo-600 text-2xl">
+                    <i class="fas fa-broom"></i>
+                </div>
+                <h3 class="font-bold text-lg">Temizlik</h3>
+            </div>
+            <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition text-center">
+                <div class="w-16 h-16 bg-indigo-50 rounded-full flex items-center justify-center mx-auto mb-4 text-indigo-600 text-2xl">
+                    <i class="fas fa-paint-roller"></i>
+                </div>
+                <h3 class="font-bold text-lg">Boya Badana</h3>
+            </div>
+            <div class="bg-white p-6 rounded-3xl shadow-sm border border-gray-100 hover:shadow-xl transition text-center">
+                <div class="w-16 h-16 bg-indigo-50 rounded-full flex items-center justify-center mx-auto mb-4 text-indigo-600 text-2xl">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3 class="font-bold text-lg">Elektrik</h3>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>
